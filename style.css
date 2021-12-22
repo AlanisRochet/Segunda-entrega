@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("./marmol.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+}
+/* inicia logo */
+.logo-titulo {
+    font-family: "Dancing Script", cursive;
+    font-size: 42px;
+    color: black;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 4px;
+    margin: auto;
+    background-color: white;
+}
+/* Finaliza logo */
+/* Inicia menu desplegable */
+.grid-header{
+margin: auto;
+width: 100%;
+font-family: "Playfair Display", serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 5px;
+    margin-top: 6px;
+}
+.nav li a{
+background-color: black;
+font-size:32px ;
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+display: block;
+}
+.nav li a:hover{
+background-color: thistle;
+}
+.nav li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+display: block;
+}
+/* finaliza menu desplegable */
+/* Inicia main index */
+.frase-motivadora {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    margin: 15px;
+    padding: 4px;
+    text-align: center;
+}
+.imagen-1 {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tit-form-registro{
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 15px;
+    padding: 4px; 
+    font-weight: bold;
+}
+.form-registro{
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.datos-pers{
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    padding: 5px;
+}
+.datos-item{
+margin: 15px;
+}
+.confirm-registro{
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+}
+form .input-1:hover{
+    background-color: rgba(240, 155, 221, 0.795);
+    border-radius: 5px;
+}
+/* finaliza main index */
+/* inicia main servicios */
+.section{
+    width: 100%;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px);
+    gap: 50px;
+    margin: 70px auto;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 30px;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.box .hover{
+    width: 0%;
+    height: 100%;
+    background-color: rgba(245, 143, 228, 0.89);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 3s all;
+    border-radius: 15px;
+}
+.hover h1 p{
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.box:hover .hover{
+    width: 100%;
+}
+
+.tit-form-turno{
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 15px;
+    padding: 4px; 
+    font-weight: bold;
+}
+.form-turno{
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.datos-pers{
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    padding: 5px;
+}
+/* finaliza main servicios */
+/* inicia footer */
+.grid-footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: black;
+}
+.footer-contacto {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.foot-cont {
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-weight: normal;
+    margin-top: 50px;
+}
+.footer-text {
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-weight: normal;
+    margin-top: 50px;
+}
+/* finaliza footer */
