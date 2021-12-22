@@ -9,6 +9,33 @@ body {
     width: 100%;
     height: 100%;
 }
+/* Inicia grid area */
+.grid-conteiner {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "main main main"
+      "footer footer footer";
+    grid-template-rows: repeat(auto-fill, 1fr);
+    height: 100vh;
+}
+.grid-hijo {
+    padding: 20px;
+}
+.grid-header {
+    grid-area: header;
+}
+.grid-main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+  
+.grid-footer {
+    grid-area: footer;}
+    
+/* FIN DE GRID AREA */
 /* inicia logo */
 .logo-titulo {
     font-family: "Dancing Script", cursive;
@@ -24,7 +51,7 @@ body {
 /* Inicia menu desplegable */
 .grid-header{
 margin: auto;
-width: 100%;
+width: 95%;
 font-family: "Playfair Display", serif;
 }
 
